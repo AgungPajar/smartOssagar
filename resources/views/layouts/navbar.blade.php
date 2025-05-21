@@ -112,44 +112,44 @@
               </h6>
               <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
-                      <img class="rounded-circle" src="https://i.pinimg.com/736x/d7/8b/4c/d78b4c2c8da2ca44cf5147f12ff102aa.jpg" alt="...">
+                      <img class="rounded-circle" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rawpixel.com%2Fsearch%2Fprofile%2520icon&psig=AOvVaw2pkgVkSxyfqr2Ztp9cmTwe&ust=1747879131530000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKiGg6i7s40DFQAAAAAdAAAAABAE" alt="...">
                       <div class="status-indicator bg-success"></div>
                   </div>
                   <div class="font-weight-bold">
-                      <div class="text-truncate">私はあなたが好きです
+                      <div class="text-truncate">p
                       </div>
-                      <div class="small text-gray-500">Miaw · 0,01s</div>
+                      <div class="small text-gray-500">p · 0,01s</div>
                   </div>
               </a>
               <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
-                      <img class="rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS1Q1RmQEgznou5nHDu4nt0Bco_h0st2Cggg&s" alt="...">
+                      <img class="rounded-circle" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rawpixel.com%2Fsearch%2Fprofile%2520icon&psig=AOvVaw2pkgVkSxyfqr2Ztp9cmTwe&ust=1747879131530000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKiGg6i7s40DFQAAAAAdAAAAABAE" alt="...">
                       <div class="status-indicator"></div>
                   </div>
                   <div>
-                      <div class="text-truncate">Hallo sayanggg</div>
-                      <div class="small text-gray-500">Waguri · 5s</div>
+                      <div class="text-truncate">H</div>
+                      <div class="small text-gray-500">w · 5s</div>
                   </div>
               </a>
               <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
-                      <img class="rounded-circle" src="https://i.pinimg.com/736x/29/55/20/295520efaccf7c4f35457ee8c5c60f38.jpg" alt="...">
+                      <img class="rounded-circle" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rawpixel.com%2Fsearch%2Fprofile%2520icon&psig=AOvVaw2pkgVkSxyfqr2Ztp9cmTwe&ust=1747879131530000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKiGg6i7s40DFQAAAAAdAAAAABAE" alt="...">
                       <div class="status-indicator bg-warning"></div>
                   </div>
                   <div>
-                      <div class="text-truncate">Cemangat ayanggg</div>
-                      <div class="small text-gray-500">Yuzuhara Madoka · 1s</div>
+                      <div class="text-truncate">C</div>
+                      <div class="small text-gray-500">Y · 1s</div>
                   </div>
               </a>
               <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="dropdown-list-image mr-3">
-                      <img class="rounded-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAuhVdNVqHEtfRB8IHfiz1y_AH7Bf7z3oZ5A&s"
+                      <img class="rounded-circle" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rawpixel.com%2Fsearch%2Fprofile%2520icon&psig=AOvVaw2pkgVkSxyfqr2Ztp9cmTwe&ust=1747879131530000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKiGg6i7s40DFQAAAAAdAAAAABAE"
                           alt="...">
                       <div class="status-indicator bg-success"></div>
                   </div>
                   <div>
-                      <div class="text-truncate">I miss u</div>
-                      <div class="small text-gray-500">Subaru Hoshina · 2s</div>
+                      <div class="text-truncate">I</div>
+                      <div class="small text-gray-500">S · 2s</div>
                   </div>
               </a>
               <a class="dropdown-item text-center small text-gray-500" href="#">Read More
