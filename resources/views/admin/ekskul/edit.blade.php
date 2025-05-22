@@ -11,27 +11,32 @@
 @endsection
 
 @section('content')
-<form action="{{ url('ekskul/' . $data->id_ekskul) }}" method="POST">
-    @csrf
-    @method('PUT')
-    <div class="row">
-        <div class="col-12">
-            <div class="card shadow mb-4">
-                <div class="card-body">
-                    <div class="form-group">
-                        <label>Nama Ekskul</label>
-                        <input type="text" class="form-control" name="nama_ekskul" value="{{ $data->nama_ekskul }}" required>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form action="{{ url('ekskul/' . $data->id_ekskul) }}" method="POST">
+                @csrf
+                @method('PUT')
+                <div class="card shadow mb-4">
+                    <div class="card-header bg-warning text-white">
+                        <h5 class="mb-0">Edit Ekskul</h5>
                     </div>
-                    <div class="form-group">
-                        <label>Password Ekskul</label>
-                        <input type="password" class="form-control" name="password" value="{{ $data->password }}" required>
+                    <div class="card-body bg-light dark:bg-dark text-dark dark:text-white">
+                        <div class="form-group mb-3">
+                            <label for="nama_ekskul">Nama Ekskul</label>
+                            <input type="text" class="form-control" id="nama_ekskul" name="nama_ekskul" value="{{ $data->nama_ekskul }}" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="password">Password Ekskul</label>
+                            <input type="password" class="form-control" id="password" name="password" value="{{ $data->password }}" required>
+                        </div>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
                     </div>
                 </div>
-                <div class="card-footer">
-                    <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
-</form>
+</div>
 @endsection
