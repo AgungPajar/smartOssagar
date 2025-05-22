@@ -1,11 +1,21 @@
 @extends('layouts.app')
+
+@section('title', 'Data Ekskul')
+
+@section('header')
+<header class="bg-white dark:bg-gray-800 shadow mb-4">
+    <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+        <h1 class="text-xl font-bold text-gray-900 dark:text-white">Data Ekskul</h1>
+    </div>
+</header>
+@endsection
+
 @section('content')
 @if (session('success'))
     <p class="alert alert-success">{{ session('success') }}</p>
 @endif
 
 <div class="container-fluid">
-    <h1 class="h3 mb-2 text-gray-800">Data Ekskul</h1>
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">Sistem Absensi Ekskul</h6>

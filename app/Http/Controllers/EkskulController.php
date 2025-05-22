@@ -10,12 +10,12 @@ class EkskulController extends Controller
     public function index()
     {
         $ekskul = Ekskul::all();
-        return view('ekskul.index', ['ekskul' => $ekskul]);
+        return view('admin.ekskul.index', ['ekskul' => $ekskul]);
     }
 
     public function create()
     {
-        return view('ekskul.create');
+        return view('admin.ekskul.create');
     }
 
     public function store(Request $request)
@@ -33,7 +33,7 @@ class EkskulController extends Controller
     public function edit($id)
     {
         $data = Ekskul::findOrFail($id);
-        return view('ekskul.edit')->with('data', $data);
+        return view('admin.ekskul.edit')->with('data', $data);
     }
 
     public function update(Request $request, $id)
