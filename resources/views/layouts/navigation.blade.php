@@ -73,9 +73,7 @@
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('ekskul.index')" :active="request()->routeIs('ekskul.*')">
-                {{ __('Ekskul') }}
-            </x-responsive-nav-link>
+            
         </div>
 
         <!-- Responsive Settings Options -->
