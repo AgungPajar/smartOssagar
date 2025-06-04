@@ -9,42 +9,52 @@ class SessionController extends Controller
 {
     public function index()
     {
-        // Jika user sudah login, arahkan langsung ke dashboard
+        // Jika admin sudah login, arahkan ke dashboard admin
         if (Auth::check()) {
-            return redirect()->route('admin.dashboard');
+            if (Auth::user()->role === 'admin') {
+                return redirect()->route('admin.dashboard');
+            }
+            // Jika bukan admin, logout dan arahkan ke login admin
+            Auth::logout();
         }
 
-        return view('admin.sesi.index');
+        return view('admin.sesi.index');  // pastikan ini view login admin
     }
 
     public function login(Request $request)
     {
-        // Validasi input
         $credentials = $request->validate([
             'email' => ['required', 'email'],
             'password' => ['required']
         ]);
 
-        // Coba autentikasi
         if (Auth::attempt($credentials)) {
-            $request->session()->regenerate(); // Hindari session fixation
+            $request->session()->regenerate();
 
-            return redirect()->intended(route('admin.dashboard'));
+            // Cek apakah user yang login adalah admin
+            if (Auth::user()->role === 'admin') {
+                return redirect()->intended(route('admin.dashboard'));
+            }
+
+            // Jika bukan admin, logout dan kembalikan error
+            Auth::logout();
+            return back()->withErrors([
+                'email' => 'Akses hanya untuk admin.'
+            ])->withInput();
         }
 
-        // Gagal login, redirect dengan error flash & simpan input sebelumnya
-        return back()
-            ->withErrors(['email' => 'Email atau password salah!'])
-            ->withInput();
+        return back()->withErrors([
+            'email' => 'Email atau password salah!'
+        ])->withInput();
     }
 
     public function logout(Request $request)
     {
         Auth::logout();
 
-        $request->session()->invalidate();          // Hapus semua data session
-        $request->session()->regenerateToken();     // Regenerasi token CSRF baru
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
 
-        return redirect()->route('login');
+        return redirect()->route('admin.login');  // redirect ke login admin
     }
 }
